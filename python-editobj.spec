@@ -9,7 +9,6 @@ Source0:	http://oomadness.nekeme.net/downloads/EditObj-%{version}.tar.gz
 # Source0-md5:	b933eac5959e2e269a806bd7c2ff0bee
 URL:		http://oomadness.nekeme.net/en/editobj/
 BuildRequires:	python-devel >= 1:2.3.4-2
-BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

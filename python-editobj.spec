@@ -1,5 +1,5 @@
 Summary:	EditObj can create a dialog box to edit ANY Python object
-Summary(pl.UTF-8):   EditObj - tworzenie okien dialogowych do edycji dowolnego obiektu Pythona
+Summary(pl.UTF-8):	EditObj - tworzenie okien dialogowych do edycji dowolnego obiektu Pythona
 Name:		python-editobj
 Version:	0.5.3
 Release:	1

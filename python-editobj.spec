@@ -38,12 +38,12 @@ EditObj to ogólny widok połączony z uniwersalnym kontrolerem.
 %setup -qn EditObj-%{version}
 
 %build
-python setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python setup.py install --optimize=2 --root=$RPM_BUILD_ROOT
+%py_install
 find $RPM_BUILD_ROOT%{py_sitescriptdir} -name "*.py" | xargs rm
 
 %clean

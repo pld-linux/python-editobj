@@ -1,0 +1,11 @@
+--- EditObj-0.5.3/setup.py~	2003-12-13 23:00:33.000000000 +0100
++++ EditObj-0.5.3/setup.py	2017-03-08 20:08:13.526635879 +0100
+@@ -18,7 +18,7 @@
+ import distutils.core, distutils.sysconfig, os, os.path
+ from distutils.core import setup, Extension
+ 
+-install_dir = distutils.sysconfig.get_python_lib()
++install_dir = distutils.sysconfig.get_python_lib(prefix='/usr')
+ 
+ setup(name         = "EditObj",
+       version      = "0.5.3",

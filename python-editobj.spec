@@ -7,7 +7,7 @@ Summary:	EditObj can create a dialog box to edit ANY Python object
 Summary(pl.UTF-8):	EditObj - tworzenie okien dialogowych do edycji dowolnego obiektu Pythona
 Name:		python-editobj
 Version:	0.5.3
-Release:	5
+Release:	6
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://oomadness.nekeme.net/downloads/EditObj-%{version}.tar.gz
@@ -48,13 +48,13 @@ rodzaju, włącznie z edytorami GUI, edytorami 3D...
 W terminologii MVC (Model View Controller - model-widok-kontroler),
 EditObj to ogólny widok połączony z uniwersalnym kontrolerem.
 
-%package -n python3-%{module}
+%package -n python3-editobj
 Summary:	EditObj can create a dialog box to edit ANY Python object
 Summary(pl.UTF-8):	EditObj - tworzenie okien dialogowych do edycji dowolnego obiektu Pythona
 Group:		Libraries/Python
 Requires:	python3-modules
 
-%description -n python3-%{module}
+%description -n python3-editobj
 EditObj can create and display a Tkinter dialog box for editing any
 Python object (similarly to what Java call a Bean editor, but for
 Python object). EditObj is a useful tool for writing (text or
@@ -63,7 +63,7 @@ non-text) editors of all kinds, including GUI editor, 3D editor,...
 In terms of MVC (Model View Controler), EditObj is a generic View
 coupled with a universal Controler.
 
-%description -n python3-%{module} -l pl.UTF-8
+%description -n python3-editobj -l pl.UTF-8
 EditObj potrafi stworzyć i wyświetlić okno dialogowe Tkinter do edycji
 dowolnego obiektu Pythona (podobnie do tego, co w Javie nazywa się
 edytorem Bean, ale dla obiektów Pythona). EditObj to narzędzie
@@ -117,7 +117,7 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %if %{with python3}
-%files -n python3-%{module}
+%files -n python3-editobj
 %defattr(644,root,root,755)
 %doc README
 %{py3_sitescriptdir}/editobj
